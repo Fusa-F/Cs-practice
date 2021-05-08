@@ -23,9 +23,9 @@ C#/UnityC#の知っておきたかったこと.
 ## 目次
 ### C#
 - [ドキュメントコメント](#ドキュメントコメント)
-- [set/get]("#set/get")
-- [enum(列挙型)]("#enum(列挙型)")
-- [Dictionary<TKey, TValue>(辞書型)]("#Dictionary<TKey,TValue>(辞書型)")
+- [set/get]("#setget")
+- [enum(列挙型)]("#enum列挙型")
+- [Dictionary<TKey, TValue>(辞書型)]("#DictionaryTKeyTValue辞書型")
 ### UnityC#
 - 
 
