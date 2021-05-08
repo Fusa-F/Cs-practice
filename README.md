@@ -25,16 +25,17 @@ C#/UnityC#の知っておきたかったこと.
 
 ## 目次
 - [導入](#導入)
-### C#
-- [ドキュメントコメント](#ドキュメントコメント)
-- [set/get](#setget)
-- [enum(列挙型)](#enum列挙型)
-- [Dictionary<TKey,TValue>(辞書型)](#dictionarytkeytvalue辞書型)
-- [コルーチン](#コルーチン)
-### UnityC#
-- [Attribute(属性)](#attribute属性)
-- [MonoBehaviorの継承](#monobehaviorの継承)
-- [シングルトン](#シングルトン)(デザインパターン)
+- ### C#
+  - [ドキュメントコメント](#ドキュメントコメント)
+  - [set/get](#setget)
+  - [enum(列挙型)](#enum列挙型)
+  - [Dictionary<TKey,TValue>(辞書型)](#dictionarytkeytvalue辞書型)
+  - [コルーチン](#コルーチン)
+- ### UnityC#
+  - [Attribute(属性)](#attribute属性)
+  - [MonoBehaviorの継承](#monobehaviorの継承)
+  - [シングルトン](#シングルトン)(デザインパターン)
+- [最後に](#最後に)
 
 # C#
 ## ドキュメントコメント
@@ -110,7 +111,7 @@ var _obj = _characterDictionary[CharacterId.Dog] // _objにはGameObject型_dogO
 ```
 <a href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleDictionary.cs" target="_blank">実例：Scripts/SampleDictionary.cs</a>
 
-### コルーチン
+## コルーチン
 - **任意のタイミングで処理の中断/再開ができる機能。**
 - returnを待たず、コルーチン内で処理を完結させる **非同期処理** の形。
 - => 〇〇秒(frame)毎に何かをするとか、**時間絡みの処理はUpdate()より格段に書きやすい！**
@@ -138,7 +139,7 @@ public IEnumerator CountDownTimer(int maxTime)
 
 
 # UnityC#
-### Attribute(属性)
+## Attribute(属性)
 - フィールドに特定の属性を付与することで、Unityエディタの **インスペクタ表示をカスタマイズできる。**
 * `[SerializeField]`：private変数でも表示(インスペクタ上でのみpublicな振る舞い)
 * `[Header(string text)]`：*text*を変数の上部に表示
@@ -157,7 +158,7 @@ private float _textAnimationSpd = .5f;
 <a href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/Sample.cs" target="_blank">実例：Scripts/Sample.cs</a>
 <a href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleDictionary.cs" target="_blank">実例：Scripts/SampleDictionary.cs</a>
 
-### MonoBehaviorの継承
+## MonoBehaviorの継承
 - Unityで作成したC#スクリプトはデフォルトでMonoBehaviorクラスを継承している。
 - MonoBehaviorを継承すると何が出来る？？
   => Start()、Update()とかUnity特有のメソッドが使える。
@@ -195,7 +196,7 @@ public class Character : MonoBehaviour
 <a href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/Sample.cs" target="_blank">実例：Scripts/Sample.cs</a>
 
 
-### シングルトン
+## シングルトン
 - 機能ではなくデザインパターン。
 - 〇〇Managerとか**存在が1つであるべきクラス**のインスタンスは、**1つしか生成されない**ようにしよう！
 - 1つしかないんだから**staticなクラス**にして、**どこからでも簡単にアクセスできる**ようにしよう！
@@ -221,3 +222,11 @@ public class Player : MonoBehaviour
 }
 ```
 <a href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleCoroutine.cs" target="_blank">実例：Scripts/SampleCoroutine.cs</a>
+
+## 最後に
+- 紹介した機能たちはあくまで一部です！ほかにも便利な機能はたくさんありますが、**学習初期に特に響いたもの**をチョイスしました。
+- これらの機能を抑えることで、以前よりも比較的楽に**良いコード**で**良いゲーム**が作れるはず！
+- 例よりももっと良い使い方、解釈もあると思うので、気になる方はぜひ公式リファレンスも覗いてみてね。
+  - [C#](https://docs.microsoft.com/ja-jp/dotnet/csharp/language-reference/)
+  - [Unity](https://docs.unity3d.com/ja/2018.4/ScriptReference/index.html)
+- 一緒にUnity頑張っていきましょう！
