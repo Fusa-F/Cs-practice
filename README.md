@@ -47,7 +47,7 @@ public void CreatePlayer(PlayerStatus status)
   /* 処理 */
 }
 ```
-[実例：Scripts/Sample.cs](https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/Sample.cs)
+<a target="_blank" href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/Sample.cs">実例：Scripts/Sample.cs</a>
 
 ## set/get
 - 変数のSetter/Getterは、set/getプロパティで定義できる。
@@ -63,7 +63,7 @@ public int N {
   }
 }
 ```
-[実例：Scripts/InheritSample.cs](https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/InheritSample.cs)
+<a target="_blank" href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/InheritSample.cs">実例：Scripts/InheritSample.cs</a>
 
 ## enum(列挙型)
 - ある名前の定数をまとめて定義できる。
@@ -85,7 +85,7 @@ public enum CharacterId {
   Zombi = 99
 }
 ```
-[実例：Scripts/SampleDictionary.cs](https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleDictionary.cs)
+<a target="_blank" href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleDictionary.cs">実例：Scripts/SampleDictionary.cs</a>
 
 ## Dictionary<TKey,TValue>(辞書型)
 - **Keyに対応するValue**の形でリストを作れる(連想配列)。
@@ -101,4 +101,4 @@ var _characterDictionary = new Dictionary<CharacterId, GameObject>() {
 }
 var _obj = _characterDictionary[CharacterId.Dog] // _objにはGameObject型_dogObjが代入される
 ```
-[実例：Scripts/SampleDictionary.cs](https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleDictionary.cs)
+<a target="_blank" href="https://github.com/Fusa-F/Cs-practice/blob/main/Scripts/SampleDictionary.cs">実例：Scripts/SampleDictionary.cs</a>
